@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="hCa-B0-lAb">
+            <objects>
+                <viewController storyboardIdentifier="VSSplashScreenViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2cj-sG-5Ol" customClass="VSSplashScreenViewController" customModule="VIPER_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Wm-Kv-Uws"/>
+                        <viewControllerLayoutGuide type="bottom" id="MSe-Zw-4iw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hPA-SV-W9F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to VIPER - Swift Project" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0b-wS-ubM">
+                                <rect key="frame" x="65.5" y="65" width="189" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="0jQ-HR-9R2"/>
+                                    <constraint firstAttribute="height" constant="48" id="4XG-yP-PYN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7T-70-ueI">
+                                <rect key="frame" x="20" y="432" width="135.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QDY-Vu-L9P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLoginButton:" destination="2cj-sG-5Ol" eventType="touchUpInside" id="t9Q-AQ-4wn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEv-EK-TJh">
+                                <rect key="frame" x="163" y="432" width="136.5" height="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Signup">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSignupButton:" destination="2cj-sG-5Ol" eventType="touchUpInside" id="TsP-qg-u19"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VEv-EK-TJh" secondAttribute="trailing" constant="20" id="1h8-sC-Gtx"/>
+                            <constraint firstItem="VEv-EK-TJh" firstAttribute="leading" secondItem="u7T-70-ueI" secondAttribute="trailing" constant="8" id="BIr-j0-QPy"/>
+                            <constraint firstItem="MSe-Zw-4iw" firstAttribute="top" secondItem="VEv-EK-TJh" secondAttribute="bottom" constant="8" id="EgQ-2i-Fo3"/>
+                            <constraint firstItem="MSe-Zw-4iw" firstAttribute="top" secondItem="u7T-70-ueI" secondAttribute="bottom" constant="8" id="K3K-IR-AER"/>
+                            <constraint firstItem="u7T-70-ueI" firstAttribute="leading" secondItem="hPA-SV-W9F" secondAttribute="leading" constant="20" id="S3H-hx-FZJ"/>
+                            <constraint firstItem="w0b-wS-ubM" firstAttribute="top" secondItem="7Wm-Kv-Uws" secondAttribute="bottom" constant="45" id="e15-66-GPU"/>
+                            <constraint firstItem="VEv-EK-TJh" firstAttribute="width" secondItem="u7T-70-ueI" secondAttribute="width" constant="1" id="hCr-16-knB"/>
+                            <constraint firstItem="w0b-wS-ubM" firstAttribute="centerX" secondItem="hPA-SV-W9F" secondAttribute="centerX" id="w5f-Hd-cSx"/>
+                            <constraint firstItem="VEv-EK-TJh" firstAttribute="height" secondItem="u7T-70-ueI" secondAttribute="height" id="whM-PE-DIb"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6a4-OK-uVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="562" y="422"/>
+        </scene>
+    </scenes>
+</document>

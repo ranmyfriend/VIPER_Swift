@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		076705461C4FE16A0046F139 /* VSSignupLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076705451C4FE16A0046F139 /* VSSignupLogic.swift */; };
+		0767054C1C4FE8580046F139 /* VSSplashScreenNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767054B1C4FE8580046F139 /* VSSplashScreenNavigation.swift */; };
+		0767054E1C4FE86E0046F139 /* VSSplashScreenNavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767054D1C4FE86E0046F139 /* VSSplashScreenNavigationProtocol.swift */; };
+		076705501C4FE8870046F139 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0767054F1C4FE8870046F139 /* SplashScreen.storyboard */; };
+		076705521C4FE89D0046F139 /* VSSplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076705511C4FE89D0046F139 /* VSSplashScreenViewController.swift */; };
+		076705541C4FE8BA0046F139 /* VSSplashScreenViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076705531C4FE8BA0046F139 /* VSSplashScreenViewProtocol.swift */; };
+		076705581C4FE8F10046F139 /* VSSplashScreenLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076705571C4FE8F10046F139 /* VSSplashScreenLogic.swift */; };
+		0767055A1C4FE9040046F139 /* VSSplashScreenLogicProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076705591C4FE9040046F139 /* VSSplashScreenLogicProtocol.swift */; };
+		076705601C4FFA0E0046F139 /* VSHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767055F1C4FFA0E0046F139 /* VSHomeViewController.swift */; };
+		076705621C4FFA230046F139 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076705611C4FFA230046F139 /* Home.storyboard */; };
+		076705641C4FFA3A0046F139 /* VSHomeLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076705631C4FFA3A0046F139 /* VSHomeLogic.swift */; };
+		076705661C4FFA4F0046F139 /* VSHomeLogicProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076705651C4FFA4F0046F139 /* VSHomeLogicProtocol.swift */; };
+		076705681C4FFA660046F139 /* VSHomeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076705671C4FFA660046F139 /* VSHomeViewProtocol.swift */; };
+		0767056A1C4FFA760046F139 /* VSHomeNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076705691C4FFA760046F139 /* VSHomeNavigation.swift */; };
+		0767056C1C4FFA880046F139 /* VSHomeNavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0767056B1C4FFA880046F139 /* VSHomeNavigationProtocol.swift */; };
+		07C43B3B1C4F53B600A1F959 /* VSSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C43B3A1C4F53B600A1F959 /* VSSignupViewController.swift */; };
+		07C43B3D1C4F53D000A1F959 /* VSSignupViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C43B3C1C4F53D000A1F959 /* VSSignupViewProtocol.swift */; };
+		07C43B3F1C4F53FF00A1F959 /* VSSignupNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C43B3E1C4F53FF00A1F959 /* VSSignupNavigation.swift */; };
+		07C43B411C4F541000A1F959 /* VSSignupNavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C43B401C4F541000A1F959 /* VSSignupNavigationProtocol.swift */; };
+		07C43B451C4F543D00A1F959 /* VSSignupLogicProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C43B441C4F543D00A1F959 /* VSSignupLogicProtocol.swift */; };
+		07C43B471C4F546E00A1F959 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C43B461C4F546E00A1F959 /* Signup.storyboard */; };
+		07E469341C4E9036008B2D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E469331C4E9036008B2D58 /* AppDelegate.swift */; };
+		07E4693B1C4E9036008B2D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E4693A1C4E9036008B2D58 /* Assets.xcassets */; };
+		07E4693E1C4E9036008B2D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E4693C1C4E9036008B2D58 /* LaunchScreen.storyboard */; };
+		07E469481C4E91CE008B2D58 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E469471C4E91CE008B2D58 /* Login.storyboard */; };
+		07E4694A1C4E9242008B2D58 /* VSViperSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E469491C4E9242008B2D58 /* VSViperSwiftApp.swift */; };
+		07E469551C4E9E66008B2D58 /* VSLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E469541C4E9E66008B2D58 /* VSLoginViewController.swift */; };
+		07E469591C4EA0DB008B2D58 /* VSDataStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E469581C4EA0DB008B2D58 /* VSDataStoreProtocol.swift */; };
+		07E4695B1C4EA0ED008B2D58 /* VSDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E4695A1C4EA0ED008B2D58 /* VSDataStore.swift */; };
+		07E4695D1C4EA10B008B2D58 /* VSCoreDataEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E4695C1C4EA10B008B2D58 /* VSCoreDataEngine.swift */; };
+		07E4695F1C4EA126008B2D58 /* VSCoreDataSharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E4695E1C4EA126008B2D58 /* VSCoreDataSharedInstance.swift */; };
+		07E469611C4EA179008B2D58 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E469601C4EA179008B2D58 /* CoreData.framework */; };
+		07E469651C4EA40A008B2D58 /* VSUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E469641C4EA40A008B2D58 /* VSUserModel.swift */; };
+		07E469681C4EA595008B2D58 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07E469661C4EA595008B2D58 /* Model.xcdatamodeld */; };
+		07E4696B1C4EA5E7008B2D58 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E469691C4EA5E7008B2D58 /* User+CoreDataProperties.swift */; };
+		07E4696C1C4EA5E7008B2D58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E4696A1C4EA5E7008B2D58 /* User.swift */; };
+		07E469721C4EA81C008B2D58 /* VSLoginNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E469711C4EA81C008B2D58 /* VSLoginNavigation.swift */; };
+		07E469741C4EA830008B2D58 /* VSLoginNavigationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E469731C4EA830008B2D58 /* VSLoginNavigationProtocol.swift */; };
+		07E469761C4EA84C008B2D58 /* VSLoginLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E469751C4EA84C008B2D58 /* VSLoginLogic.swift */; };
+		07E469781C4EA864008B2D58 /* VSLoginLogicProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E469771C4EA864008B2D58 /* VSLoginLogicProtocol.swift */; };
+		07E4697A1C4EA875008B2D58 /* VSLoginViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E469791C4EA875008B2D58 /* VSLoginViewProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		076705451C4FE16A0046F139 /* VSSignupLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSSignupLogic.swift; path = Modules/Signup/VSSignupLogic.swift; sourceTree = "<group>"; };
+		0767054B1C4FE8580046F139 /* VSSplashScreenNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSSplashScreenNavigation.swift; path = Modules/SplashScreen/VSSplashScreenNavigation.swift; sourceTree = "<group>"; };
+		0767054D1C4FE86E0046F139 /* VSSplashScreenNavigationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSSplashScreenNavigationProtocol.swift; path = Modules/SplashScreen/VSSplashScreenNavigationProtocol.swift; sourceTree = "<group>"; };
+		0767054F1C4FE8870046F139 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = Modules/SplashScreen/SplashScreen.storyboard; sourceTree = "<group>"; };
+		076705511C4FE89D0046F139 /* VSSplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSSplashScreenViewController.swift; path = Modules/SplashScreen/VSSplashScreenViewController.swift; sourceTree = "<group>"; };
+		076705531C4FE8BA0046F139 /* VSSplashScreenViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSSplashScreenViewProtocol.swift; path = Modules/SplashScreen/VSSplashScreenViewProtocol.swift; sourceTree = "<group>"; };
+		076705571C4FE8F10046F139 /* VSSplashScreenLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSSplashScreenLogic.swift; path = Modules/SplashScreen/VSSplashScreenLogic.swift; sourceTree = "<group>"; };
+		076705591C4FE9040046F139 /* VSSplashScreenLogicProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSSplashScreenLogicProtocol.swift; path = Modules/SplashScreen/VSSplashScreenLogicProtocol.swift; sourceTree = "<group>"; };
+		0767055F1C4FFA0E0046F139 /* VSHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSHomeViewController.swift; path = Modules/Home/VSHomeViewController.swift; sourceTree = "<group>"; };
+		076705611C4FFA230046F139 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Modules/Home/Home.storyboard; sourceTree = "<group>"; };
+		076705631C4FFA3A0046F139 /* VSHomeLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSHomeLogic.swift; path = Modules/Home/VSHomeLogic.swift; sourceTree = "<group>"; };
+		076705651C4FFA4F0046F139 /* VSHomeLogicProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSHomeLogicProtocol.swift; path = Modules/Home/VSHomeLogicProtocol.swift; sourceTree = "<group>"; };
+		076705671C4FFA660046F139 /* VSHomeViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSHomeViewProtocol.swift; path = Modules/Home/VSHomeViewProtocol.swift; sourceTree = "<group>"; };
+		076705691C4FFA760046F139 /* VSHomeNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSHomeNavigation.swift; path = Modules/Home/VSHomeNavigation.swift; sourceTree = "<group>"; };
+		0767056B1C4FFA880046F139 /* VSHomeNavigationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSHomeNavigationProtocol.swift; path = Modules/Home/VSHomeNavigationProtocol.swift; sourceTree = "<group>"; };
+		07C43B3A1C4F53B600A1F959 /* VSSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSSignupViewController.swift; path = Modules/Signup/VSSignupViewController.swift; sourceTree = "<group>"; };
+		07C43B3C1C4F53D000A1F959 /* VSSignupViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSSignupViewProtocol.swift; path = Modules/Signup/VSSignupViewProtocol.swift; sourceTree = "<group>"; };
+		07C43B3E1C4F53FF00A1F959 /* VSSignupNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSSignupNavigation.swift; path = Modules/Signup/VSSignupNavigation.swift; sourceTree = "<group>"; };
+		07C43B401C4F541000A1F959 /* VSSignupNavigationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSSignupNavigationProtocol.swift; path = Modules/Signup/VSSignupNavigationProtocol.swift; sourceTree = "<group>"; };
+		07C43B441C4F543D00A1F959 /* VSSignupLogicProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSSignupLogicProtocol.swift; path = Modules/Signup/VSSignupLogicProtocol.swift; sourceTree = "<group>"; };
+		07C43B461C4F546E00A1F959 /* Signup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Signup.storyboard; path = Modules/Signup/Signup.storyboard; sourceTree = "<group>"; };
+		07E469301C4E9036008B2D58 /* VIPER_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPER_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07E469331C4E9036008B2D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07E4693A1C4E9036008B2D58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07E4693D1C4E9036008B2D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07E4693F1C4E9036008B2D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07E469471C4E91CE008B2D58 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Modules/Login/Login.storyboard; sourceTree = "<group>"; };
+		07E469491C4E9242008B2D58 /* VSViperSwiftApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSViperSwiftApp.swift; sourceTree = "<group>"; };
+		07E469541C4E9E66008B2D58 /* VSLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSLoginViewController.swift; path = Modules/Login/VSLoginViewController.swift; sourceTree = "<group>"; };
+		07E469581C4EA0DB008B2D58 /* VSDataStoreProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSDataStoreProtocol.swift; path = Core/CoreData/VSDataStoreProtocol.swift; sourceTree = "<group>"; };
+		07E4695A1C4EA0ED008B2D58 /* VSDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSDataStore.swift; path = Core/CoreData/VSDataStore.swift; sourceTree = "<group>"; };
+		07E4695C1C4EA10B008B2D58 /* VSCoreDataEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSCoreDataEngine.swift; path = Core/CoreData/VSCoreDataEngine.swift; sourceTree = "<group>"; };
+		07E4695E1C4EA126008B2D58 /* VSCoreDataSharedInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSCoreDataSharedInstance.swift; path = Core/CoreData/VSCoreDataSharedInstance.swift; sourceTree = "<group>"; };
+		07E469601C4EA179008B2D58 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		07E469641C4EA40A008B2D58 /* VSUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSUserModel.swift; path = Models/VSUserModel.swift; sourceTree = "<group>"; };
+		07E469671C4EA595008B2D58 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		07E469691C4EA5E7008B2D58 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "Core/CoreData/User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		07E4696A1C4EA5E7008B2D58 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Core/CoreData/User.swift; sourceTree = "<group>"; };
+		07E469711C4EA81C008B2D58 /* VSLoginNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSLoginNavigation.swift; path = Modules/Login/VSLoginNavigation.swift; sourceTree = "<group>"; };
+		07E469731C4EA830008B2D58 /* VSLoginNavigationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSLoginNavigationProtocol.swift; path = Modules/Login/VSLoginNavigationProtocol.swift; sourceTree = "<group>"; };
+		07E469751C4EA84C008B2D58 /* VSLoginLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSLoginLogic.swift; path = Modules/Login/VSLoginLogic.swift; sourceTree = "<group>"; };
+		07E469771C4EA864008B2D58 /* VSLoginLogicProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSLoginLogicProtocol.swift; path = Modules/Login/VSLoginLogicProtocol.swift; sourceTree = "<group>"; };
+		07E469791C4EA875008B2D58 /* VSLoginViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VSLoginViewProtocol.swift; path = Modules/Login/VSLoginViewProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07E4692D1C4E9036008B2D58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E469611C4EA179008B2D58 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		076705471C4FE7CD0046F139 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0767054A1C4FE8040046F139 /* Navigation */,
+				076705491C4FE7FC0046F139 /* View */,
+				076705481C4FE7F60046F139 /* Logic */,
+			);
+			name = SplashScreen;
+			sourceTree = "<group>";
+		};
+		076705481C4FE7F60046F139 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				076705571C4FE8F10046F139 /* VSSplashScreenLogic.swift */,
+				076705591C4FE9040046F139 /* VSSplashScreenLogicProtocol.swift */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		076705491C4FE7FC0046F139 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0767054F1C4FE8870046F139 /* SplashScreen.storyboard */,
+				076705511C4FE89D0046F139 /* VSSplashScreenViewController.swift */,
+				076705531C4FE8BA0046F139 /* VSSplashScreenViewProtocol.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0767054A1C4FE8040046F139 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0767054B1C4FE8580046F139 /* VSSplashScreenNavigation.swift */,
+				0767054D1C4FE86E0046F139 /* VSSplashScreenNavigationProtocol.swift */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		0767055B1C4FF9C10046F139 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0767055E1C4FF9D50046F139 /* Logic */,
+				0767055D1C4FF9CE0046F139 /* View */,
+				0767055C1C4FF9C90046F139 /* Navigation */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		0767055C1C4FF9C90046F139 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				076705691C4FFA760046F139 /* VSHomeNavigation.swift */,
+				0767056B1C4FFA880046F139 /* VSHomeNavigationProtocol.swift */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		0767055D1C4FF9CE0046F139 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0767055F1C4FFA0E0046F139 /* VSHomeViewController.swift */,
+				076705611C4FFA230046F139 /* Home.storyboard */,
+				076705671C4FFA660046F139 /* VSHomeViewProtocol.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0767055E1C4FF9D50046F139 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				076705631C4FFA3A0046F139 /* VSHomeLogic.swift */,
+				076705651C4FFA4F0046F139 /* VSHomeLogicProtocol.swift */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		07C43B361C4F537500A1F959 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				07C43B391C4F538900A1F959 /* Navigation */,
+				07C43B381C4F538400A1F959 /* Logic */,
+				07C43B371C4F537F00A1F959 /* View */,
+			);
+			name = Signup;
+			sourceTree = "<group>";
+		};
+		07C43B371C4F537F00A1F959 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07C43B3A1C4F53B600A1F959 /* VSSignupViewController.swift */,
+				07C43B3C1C4F53D000A1F959 /* VSSignupViewProtocol.swift */,
+				07C43B461C4F546E00A1F959 /* Signup.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		07C43B381C4F538400A1F959 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				07C43B441C4F543D00A1F959 /* VSSignupLogicProtocol.swift */,
+				076705451C4FE16A0046F139 /* VSSignupLogic.swift */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		07C43B391C4F538900A1F959 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				07C43B3E1C4F53FF00A1F959 /* VSSignupNavigation.swift */,
+				07C43B401C4F541000A1F959 /* VSSignupNavigationProtocol.swift */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		07E469271C4E9036008B2D58 = {
+			isa = PBXGroup;
+			children = (
+				07E469621C4EA18B008B2D58 /* Framework */,
+				07E469321C4E9036008B2D58 /* VIPER_Swift */,
+				07E469311C4E9036008B2D58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07E469311C4E9036008B2D58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07E469301C4E9036008B2D58 /* VIPER_Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07E469321C4E9036008B2D58 /* VIPER_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				07E469561C4EA07D008B2D58 /* Core */,
+				07E469451C4E9194008B2D58 /* Modules */,
+				07E469331C4E9036008B2D58 /* AppDelegate.swift */,
+				07E469491C4E9242008B2D58 /* VSViperSwiftApp.swift */,
+				07E4693A1C4E9036008B2D58 /* Assets.xcassets */,
+				07E4693C1C4E9036008B2D58 /* LaunchScreen.storyboard */,
+				07E4693F1C4E9036008B2D58 /* Info.plist */,
+			);
+			path = VIPER_Swift;
+			sourceTree = "<group>";
+		};
+		07E469451C4E9194008B2D58 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0767055B1C4FF9C10046F139 /* Home */,
+				076705471C4FE7CD0046F139 /* SplashScreen */,
+				07C43B361C4F537500A1F959 /* Signup */,
+				07E469461C4E919F008B2D58 /* Login */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		07E469461C4E919F008B2D58 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				07E4697E1C4EA88D008B2D58 /* View */,
+				07E4697D1C4EA886008B2D58 /* Logic */,
+				07E4697C1C4EA880008B2D58 /* Navigation */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		07E469561C4EA07D008B2D58 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				07E469631C4EA3F2008B2D58 /* Models */,
+				07E469571C4EA09C008B2D58 /* CoreData */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		07E469571C4EA09C008B2D58 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				07E469581C4EA0DB008B2D58 /* VSDataStoreProtocol.swift */,
+				07E4695A1C4EA0ED008B2D58 /* VSDataStore.swift */,
+				07E4695C1C4EA10B008B2D58 /* VSCoreDataEngine.swift */,
+				07E4695E1C4EA126008B2D58 /* VSCoreDataSharedInstance.swift */,
+				07E469661C4EA595008B2D58 /* Model.xcdatamodeld */,
+				07E469691C4EA5E7008B2D58 /* User+CoreDataProperties.swift */,
+				07E4696A1C4EA5E7008B2D58 /* User.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		07E469621C4EA18B008B2D58 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				07E469601C4EA179008B2D58 /* CoreData.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		07E469631C4EA3F2008B2D58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07E469641C4EA40A008B2D58 /* VSUserModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		07E4697C1C4EA880008B2D58 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				07E469711C4EA81C008B2D58 /* VSLoginNavigation.swift */,
+				07E469731C4EA830008B2D58 /* VSLoginNavigationProtocol.swift */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		07E4697D1C4EA886008B2D58 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				07E469751C4EA84C008B2D58 /* VSLoginLogic.swift */,
+				07E469771C4EA864008B2D58 /* VSLoginLogicProtocol.swift */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		07E4697E1C4EA88D008B2D58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07E469471C4E91CE008B2D58 /* Login.storyboard */,
+				07E469541C4E9E66008B2D58 /* VSLoginViewController.swift */,
+				07E469791C4EA875008B2D58 /* VSLoginViewProtocol.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07E4692F1C4E9036008B2D58 /* VIPER_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07E469421C4E9036008B2D58 /* Build configuration list for PBXNativeTarget "VIPER_Swift" */;
+			buildPhases = (
+				07E4692C1C4E9036008B2D58 /* Sources */,
+				07E4692D1C4E9036008B2D58 /* Frameworks */,
+				07E4692E1C4E9036008B2D58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VIPER_Swift;
+			productName = VIPER_Swift;
+			productReference = 07E469301C4E9036008B2D58 /* VIPER_Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07E469281C4E9036008B2D58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VS;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ranjith;
+				TargetAttributes = {
+					07E4692F1C4E9036008B2D58 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 35P9S7STBV;
+					};
+				};
+			};
+			buildConfigurationList = 07E4692B1C4E9036008B2D58 /* Build configuration list for PBXProject "VIPER_Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07E469271C4E9036008B2D58;
+			productRefGroup = 07E469311C4E9036008B2D58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07E4692F1C4E9036008B2D58 /* VIPER_Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07E4692E1C4E9036008B2D58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E469481C4E91CE008B2D58 /* Login.storyboard in Resources */,
+				07E4693E1C4E9036008B2D58 /* LaunchScreen.storyboard in Resources */,
+				07C43B471C4F546E00A1F959 /* Signup.storyboard in Resources */,
+				076705621C4FFA230046F139 /* Home.storyboard in Resources */,
+				076705501C4FE8870046F139 /* SplashScreen.storyboard in Resources */,
+				07E4693B1C4E9036008B2D58 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07E4692C1C4E9036008B2D58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E4695D1C4EA10B008B2D58 /* VSCoreDataEngine.swift in Sources */,
+				07C43B3B1C4F53B600A1F959 /* VSSignupViewController.swift in Sources */,
+				076705661C4FFA4F0046F139 /* VSHomeLogicProtocol.swift in Sources */,
+				0767056A1C4FFA760046F139 /* VSHomeNavigation.swift in Sources */,
+				076705521C4FE89D0046F139 /* VSSplashScreenViewController.swift in Sources */,
+				07E469341C4E9036008B2D58 /* AppDelegate.swift in Sources */,
+				07E469591C4EA0DB008B2D58 /* VSDataStoreProtocol.swift in Sources */,
+				076705461C4FE16A0046F139 /* VSSignupLogic.swift in Sources */,
+				076705601C4FFA0E0046F139 /* VSHomeViewController.swift in Sources */,
+				07E4695F1C4EA126008B2D58 /* VSCoreDataSharedInstance.swift in Sources */,
+				076705541C4FE8BA0046F139 /* VSSplashScreenViewProtocol.swift in Sources */,
+				07E469781C4EA864008B2D58 /* VSLoginLogicProtocol.swift in Sources */,
+				07E469721C4EA81C008B2D58 /* VSLoginNavigation.swift in Sources */,
+				0767054E1C4FE86E0046F139 /* VSSplashScreenNavigationProtocol.swift in Sources */,
+				07E4696C1C4EA5E7008B2D58 /* User.swift in Sources */,
+				07E4695B1C4EA0ED008B2D58 /* VSDataStore.swift in Sources */,
+				076705581C4FE8F10046F139 /* VSSplashScreenLogic.swift in Sources */,
+				07C43B451C4F543D00A1F959 /* VSSignupLogicProtocol.swift in Sources */,
+				07C43B411C4F541000A1F959 /* VSSignupNavigationProtocol.swift in Sources */,
+				0767056C1C4FFA880046F139 /* VSHomeNavigationProtocol.swift in Sources */,
+				076705681C4FFA660046F139 /* VSHomeViewProtocol.swift in Sources */,
+				0767054C1C4FE8580046F139 /* VSSplashScreenNavigation.swift in Sources */,
+				07E4697A1C4EA875008B2D58 /* VSLoginViewProtocol.swift in Sources */,
+				07E4694A1C4E9242008B2D58 /* VSViperSwiftApp.swift in Sources */,
+				07E469741C4EA830008B2D58 /* VSLoginNavigationProtocol.swift in Sources */,
+				07E469651C4EA40A008B2D58 /* VSUserModel.swift in Sources */,
+				07C43B3F1C4F53FF00A1F959 /* VSSignupNavigation.swift in Sources */,
+				07E4696B1C4EA5E7008B2D58 /* User+CoreDataProperties.swift in Sources */,
+				0767055A1C4FE9040046F139 /* VSSplashScreenLogicProtocol.swift in Sources */,
+				07E469551C4E9E66008B2D58 /* VSLoginViewController.swift in Sources */,
+				076705641C4FFA3A0046F139 /* VSHomeLogic.swift in Sources */,
+				07E469681C4EA595008B2D58 /* Model.xcdatamodeld in Sources */,
+				07E469761C4EA84C008B2D58 /* VSLoginLogic.swift in Sources */,
+				07C43B3D1C4F53D000A1F959 /* VSSignupViewProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		07E4693C1C4E9036008B2D58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07E4693D1C4E9036008B2D58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07E469401C4E9036008B2D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07E469411C4E9036008B2D58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07E469431C4E9036008B2D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VIPER_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "come.mediamint.VIPER-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07E469441C4E9036008B2D58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VIPER_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "come.mediamint.VIPER-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07E4692B1C4E9036008B2D58 /* Build configuration list for PBXProject "VIPER_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07E469401C4E9036008B2D58 /* Debug */,
+				07E469411C4E9036008B2D58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07E469421C4E9036008B2D58 /* Build configuration list for PBXNativeTarget "VIPER_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07E469431C4E9036008B2D58 /* Debug */,
+				07E469441C4E9036008B2D58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		07E469661C4EA595008B2D58 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				07E469671C4EA595008B2D58 /* Model.xcdatamodel */,
+			);
+			currentVersion = 07E469671C4EA595008B2D58 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = Core/CoreData/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 07E469281C4E9036008B2D58 /* Project object */;
+}
