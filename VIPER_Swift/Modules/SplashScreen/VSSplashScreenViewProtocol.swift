@@ -8,6 +8,6 @@
 
 import Foundation
 
-@objc protocol VSSplashScreenViewProtocol {
+protocol VSSplashScreenViewProtocol {
     
 }

@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-@objc protocol VSSignupNavigationProtocol {
-    
+protocol VSSignupNavigationProtocol {
+    var signupViewController :VSSignupViewController?{get set}
     func dismissSignupViewController()
     func presentHomeScreen()
 }

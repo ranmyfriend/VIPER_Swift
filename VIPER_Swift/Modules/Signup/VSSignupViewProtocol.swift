@@ -8,6 +8,6 @@
 
 import Foundation
 
-@objc protocol VSSignupViewProtocol {
+protocol VSSignupViewProtocol {
     func userCreationIntimation(isSaved :Bool)
 }

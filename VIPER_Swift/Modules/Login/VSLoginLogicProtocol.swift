@@ -8,6 +8,6 @@
 
 import Foundation
 
-@objc protocol VSLoginLogicProtocol {
+protocol VSLoginLogicProtocol {
     func loginUserWithModel(userModel :VSUserModel)
 }

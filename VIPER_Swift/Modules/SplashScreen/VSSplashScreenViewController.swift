@@ -9,8 +9,8 @@
 import UIKit
 
 class VSSplashScreenViewController: UIViewController {
-    
-    var navigation: VSSplashScreenNavigation?
+        
+    var navigation: VSSplashScreenNavigationProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()

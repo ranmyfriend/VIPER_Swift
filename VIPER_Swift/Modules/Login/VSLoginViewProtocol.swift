@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc protocol VSLoginViewProtocol {
+protocol VSLoginViewProtocol {
     
     func loggedInIntimation(isSaved :Bool)
     

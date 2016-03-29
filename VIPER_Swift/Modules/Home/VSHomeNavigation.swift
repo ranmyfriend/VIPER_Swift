@@ -9,9 +9,11 @@
 import Foundation
 import UIKit
 
-class VSHomeNavigation: NSObject {
+class VSHomeNavigation: NSObject,VSHomeNavigationProtocol {
+    
     var window: UIWindow?
-    var splashScreenNavigation: VSSplashScreenNavigation?
+    
+    var splashScreenNavigation: VSSplashScreenNavigationProtocol?
     var homeViewController :VSHomeViewController?
 
     func presentHomeViewControllerInWindow() {
@@ -19,12 +21,12 @@ class VSHomeNavigation: NSObject {
         self.homeViewController = homeViewController
         self.homeViewController!.navigation = self
         self.homeViewController!.logic = VSHomeLogic()
-        self.window?.rootViewController = homeViewController
-        self.window?.makeKeyAndVisible()
+        window!.rootViewController = homeViewController
+        window!.makeKeyAndVisible()
     }
     func dismissHomeViewController() {
         self.homeViewController!.dismissViewControllerAnimated(false, completion: nil)
-        self.splashScreenNavigation = VSSplashScreenNavigation.sharedInstance
+        self.splashScreenNavigation = VSSplashScreenNavigation()
         self.splashScreenNavigation!.presentSplashScreenViewControllerInWindow()
     }
 }

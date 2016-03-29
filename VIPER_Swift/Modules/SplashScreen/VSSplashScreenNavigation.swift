@@ -10,27 +10,16 @@ import UIKit
 
 class VSSplashScreenNavigation: NSObject,VSSplashScreenNavigationProtocol {
 
-    var splashScreenViewController: VSSplashScreenViewController?
     var window: UIWindow?
-    
-    class var sharedInstance: VSSplashScreenNavigation {
-        struct Static {
-            static var onceToken: dispatch_once_t = 0
-            static var instance: VSSplashScreenNavigation? = nil
-        }
-        
-        dispatch_once(&Static.onceToken) {
-            Static.instance = VSSplashScreenNavigation()
-        }
-        return Static.instance!
-    }
     
     override init() {}
     
     func presentSplashScreenViewControllerInWindow() {
-        let splashScreenViewController = UIStoryboard.init(name: "SplashScreen", bundle: nil).instantiateViewControllerWithIdentifier("VSSplashScreenViewController") as? VSSplashScreenViewController
-        self.splashScreenViewController = splashScreenViewController
-        self.splashScreenViewController!.navigation = self
+        let splashScreenViewController = self.createSpalshViewController()
+        splashScreenViewController.navigation = self
+        if (self.window == nil) {
+            self.window = UIApplication.sharedApplication().keyWindow
+        }
         self.window!.rootViewController = splashScreenViewController
         self.window!.makeKeyAndVisible()
     }
@@ -41,7 +30,7 @@ class VSSplashScreenNavigation: NSObject,VSSplashScreenNavigationProtocol {
         loginViewController!.logic!.view = loginViewController
         loginViewController!.navigation = VSLoginNavigation()
         loginViewController!.navigation!.loginViewController = loginViewController
-        self.splashScreenViewController?.presentViewController(loginViewController!, animated: true, completion: nil)
+        self.window?.rootViewController!.presentViewController(loginViewController!, animated: true, completion: nil)
     }
     
     func presentSignupViewController() {
@@ -50,6 +39,10 @@ class VSSplashScreenNavigation: NSObject,VSSplashScreenNavigationProtocol {
         signupViewController!.logic!.view = signupViewController
         signupViewController!.navigation = VSSignupNavigation()
         signupViewController!.navigation!.signupViewController = signupViewController
-        self.splashScreenViewController?.presentViewController(signupViewController!, animated: true, completion: nil)
+        self.window?.rootViewController!.presentViewController(signupViewController!, animated: true, completion: nil)
+    }
+    
+    private func createSpalshViewController() ->VSSplashScreenViewController {
+        return UIStoryboard.init(name: "SplashScreen", bundle: nil).instantiateViewControllerWithIdentifier("VSSplashScreenViewController") as! VSSplashScreenViewController
     }
 }

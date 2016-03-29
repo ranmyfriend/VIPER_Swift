@@ -10,21 +10,18 @@ import Foundation
 import UIKit
 
 class VSViperSwiftApp:NSObject {
+    var splashScreenNavigation: VSSplashScreenNavigationProtocol?
+    var homeNavigation: VSHomeNavigationProtocol?
     
-    let splashScreenNavigation: VSSplashScreenNavigation?
-    var homeNavigation: VSHomeNavigation?
-    
-    override init() {
-        self.splashScreenNavigation = VSSplashScreenNavigation.sharedInstance
-//        self.homeNavigation = VSHomeNavigation.sharedInstance
-    }
+    override init() {}
     
     // Findout here, Why can't i use UIApplication as Parameter.
     func application(didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?, window: UIWindow) -> Bool {
-        self.splashScreenNavigation?.window = window
+        self.splashScreenNavigation = VSSplashScreenNavigation()
+        window.frame = UIScreen.mainScreen().bounds
+        self.splashScreenNavigation!.window = window
         self.homeNavigation = VSHomeNavigation()
-//        self.homeNavigation = VSHomeNavigation.sharedInstance
-        self.homeNavigation?.window = window
+        self.homeNavigation!.window = window
         self.pr_checkIfAnyUserPersistedOrNot()
         return true;
     }

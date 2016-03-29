@@ -10,8 +10,8 @@ import UIKit
 
 class VSHomeViewController: UIViewController {
     
-    var navigation: VSHomeNavigation?
-    var logic: VSHomeLogic?
+    var navigation: VSHomeNavigationProtocol?
+    var logic: VSHomeLogicProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()

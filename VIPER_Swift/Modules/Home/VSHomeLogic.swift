@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VSHomeLogic: NSObject {
+class VSHomeLogic: NSObject,VSHomeLogicProtocol {
 
     func logoutUser() {
         VSDataStore.defaultLocalDB.logoutUser()

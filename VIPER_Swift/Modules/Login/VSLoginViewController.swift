@@ -38,6 +38,8 @@ class VSLoginViewController: UIViewController,VSLoginViewProtocol {
     @IBAction func didTapDismissButton(sender: AnyObject) {
         self.navigation!.dismissLoginViewController()
     }
+    @IBAction func didTapReturnKey(sender: AnyObject) {
+    }
 
     // VSLoginViewProtocol Definitions
     func loggedInIntimation(isSaved :Bool) {

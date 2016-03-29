@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-@objc protocol VSSplashScreenNavigationProtocol {
+protocol VSSplashScreenNavigationProtocol {
+    var window:UIWindow? {get set}
     func presentSplashScreenViewControllerInWindow()
     func presentLoginViewController()
     func presentSignupViewController()

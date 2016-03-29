@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
-@objc protocol VSHomeNavigationProtocol {
-   func presentHomeViewControllerInWindow()
+protocol VSHomeNavigationProtocol {
+    var window:UIWindow? {get set}
+    var homeViewController:VSHomeViewController? {get set}
+    func presentHomeViewControllerInWindow()
     func dismissHomeViewController()
 }

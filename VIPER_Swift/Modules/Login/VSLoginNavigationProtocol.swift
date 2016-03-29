@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-@objc protocol VSLoginNavigationProtocol {
+protocol VSLoginNavigationProtocol {
     
     func dismissLoginViewController()
     

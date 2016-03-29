@@ -10,8 +10,8 @@ import UIKit
 
 class VSSignupViewController: UIViewController,VSSignupViewProtocol {
     
-    var logic :VSSignupLogic?
-    var navigation :VSSignupNavigation?
+    var logic :VSSignupLogicProtocol?
+    var navigation :VSSignupNavigationProtocol?
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -50,6 +50,8 @@ class VSSignupViewController: UIViewController,VSSignupViewProtocol {
         else {
             print("Failure:User did not store")
         }
+    }
+    @IBAction func didTapReturnKey(sender: AnyObject) {
     }
 
 }

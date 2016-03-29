@@ -8,6 +8,6 @@
 
 import Foundation
 
-@objc protocol VSHomeLogicProtocol {
+protocol VSHomeLogicProtocol:class {
     func logoutUser()
 }
