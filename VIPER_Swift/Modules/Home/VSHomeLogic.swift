@@ -9,8 +9,10 @@
 import UIKit
 
 class VSHomeLogic: NSObject,VSHomeLogicProtocol {
-
+    var view: VSHomeViewProtocol?
     func logoutUser() {
+        view!.showBusyIndicator("Network Call started")
         VSDataStore.defaultLocalDB.logoutUser()
+        view!.dismissBusyIndicator()
     }
 }

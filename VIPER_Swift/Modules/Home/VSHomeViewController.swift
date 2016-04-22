@@ -8,11 +8,11 @@
 
 import UIKit
 
-class VSHomeViewController: UIViewController {
+class VSHomeViewController: UIViewController,VSHomeViewProtocol {
     
     var navigation: VSHomeNavigationProtocol?
     var logic: VSHomeLogicProtocol?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,4 +28,11 @@ class VSHomeViewController: UIViewController {
         self.navigation?.dismissHomeViewController()
     }
     
+    //HomeViewProtocol functions
+    func showBusyIndicator(message:String) {
+        print("showing busy indicator for network call")
+    }
+    func dismissBusyIndicator() {
+        print("dismissing the busy indicator")
+    }
 }

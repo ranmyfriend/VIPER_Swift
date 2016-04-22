@@ -17,7 +17,6 @@ class VSSignupViewController: UIViewController,VSSignupViewProtocol {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    
     @IBOutlet weak var signupButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,5 +52,12 @@ class VSSignupViewController: UIViewController,VSSignupViewProtocol {
     }
     @IBAction func didTapReturnKey(sender: AnyObject) {
     }
-
+    
+    //HomeViewProtocol functions
+    func showBusyIndicator(message:String) {
+        print("showing busy indicator for network call")
+    }
+    func dismissBusyIndicator() {
+        print("dismissing the busy indicator")
+    }
 }

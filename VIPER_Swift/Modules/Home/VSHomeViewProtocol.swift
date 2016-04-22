@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol VSHomeViewProtocol:class {
+    func showBusyIndicator(message:String)
+    func dismissBusyIndicator()
+}

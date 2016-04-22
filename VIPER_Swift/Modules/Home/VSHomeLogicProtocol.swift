@@ -9,5 +9,6 @@
 import Foundation
 
 protocol VSHomeLogicProtocol:class {
+    var view:VSHomeViewProtocol? {get set}
     func logoutUser()
 }

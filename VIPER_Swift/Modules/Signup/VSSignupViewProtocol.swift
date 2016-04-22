@@ -10,4 +10,7 @@ import Foundation
 
 protocol VSSignupViewProtocol {
     func userCreationIntimation(isSaved :Bool)
+    //indicators are helping user to observe what's going on the app
+    func showBusyIndicator(message:String)
+    func dismissBusyIndicator()
 }

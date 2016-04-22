@@ -21,6 +21,7 @@ class VSHomeNavigation: NSObject,VSHomeNavigationProtocol {
         self.homeViewController = homeViewController
         self.homeViewController!.navigation = self
         self.homeViewController!.logic = VSHomeLogic()
+        self.homeViewController!.logic?.view = homeViewController
         window!.rootViewController = homeViewController
         window!.makeKeyAndVisible()
     }

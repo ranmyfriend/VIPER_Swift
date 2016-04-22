@@ -9,6 +9,6 @@
 import Foundation
 
 protocol VSSignupLogicProtocol {
-    var view :VSSignupViewController?{get set}
+    var view :VSSignupViewProtocol?{get set}
     func createUser(userModel :VSUserModel)
 }

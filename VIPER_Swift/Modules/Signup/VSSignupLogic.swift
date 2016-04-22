@@ -10,10 +10,12 @@ import Foundation
 
 class VSSignupLogic: NSObject,VSSignupLogicProtocol {
 
-    var view :VSSignupViewController?
+    var view :VSSignupViewProtocol?
     
     func createUser(userModel: VSUserModel) {
+    self.view?.showBusyIndicator("Creating user")
     self.view?.userCreationIntimation(VSDataStore.defaultLocalDB.createUser(userModel))
+    self.view?.dismissBusyIndicator()
     }
     
 }
